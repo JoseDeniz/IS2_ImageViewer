@@ -13,7 +13,7 @@ import static java.util.Arrays.stream;
 public class FileImageReader implements ImageReader {
 
     private final File[] files;
-    private static final String[] IMAGE_EXTENSIONS = {".png", ".jpg", ".gif"};
+    private final String[] IMAGE_EXTENSIONS = {".png", ".jpg", ".gif"};
 
     public FileImageReader(String path) {
         this(new File(path));
